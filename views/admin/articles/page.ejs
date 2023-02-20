@@ -1,11 +1,11 @@
 <%- include ../../partials/header.ejs %>
 <%- include ../../partials/homenavbar.ejs %>
-<body>
+<body style="background-color:silver">
     <div class="container">
         <hr>
         <% result.articles.rows.forEach(article => { %>
             <div class="card">
-                <div class="card-header">
+                <div class="card-header" style="font-family: 'Merienda', cursive;">
                     <h2><%= article.title %></h2>
                 </div>
                 <div class="card-body">

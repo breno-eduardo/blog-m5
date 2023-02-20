@@ -1,19 +1,22 @@
 <%- include partials/header.ejs %>
 <%- include partials/homenavbar.ejs %>
-<body>
+<body style="background-color:silver">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&display=swap" rel="stylesheet">
     <div class="container">
         <hr>
-        <div class="jumbotron">
-            <h1 class="display-4">Bem vindo ao blog acadêmico</h1>
-            <p class="lead">Projeto acadêmico, chora concorrencia. </p>
+        <div class="jumbotron")">
+            <h1 class="display-4" style="color:rgb(0, 0, 0); font-family: 'Abril Fatface', cursive;">Bem vindo ao blog acadêmico</h1>
+            <p class="lead" style="color:rgb(0, 0, 0); font-family: 'Alfa Slab One', cursive;">Projeto acadêmico, chora concorrencia. </p>
             <hr class="my-4">
             <!--<p>Descrição detalhada aqui!</p>-->
              <!--<a class="btn btn-primary btn-lg" href="#" role="button">Leia mais</a>-->
           </div>
         <hr>
         <% articles.forEach(article => { %>
-            <div class="card">
-                <div class="card-header">
+            <div class="card" >
+                <div class="card-header" style="font-family: 'Merienda', cursive;">
                     <h2><%= article.title %></h2>
                 </div>
                 <div class="card-body">
@@ -23,8 +26,8 @@
             <br>
         <% }) %>
 
-        <div class="row">
-            <div class="col col-12">
+        <div class="row" >
+            <div class="col col-12" >
                 <a style="float:right" href="/articles/page/2">Prox >>></a>
             </div>
             <hr>
