@@ -6,7 +6,7 @@
 # INFORMAÇÕES GERAIS
  Com o node.js, foi possivel desenvolver o blog, nele é possivel logar, cadastrar, postar, deletar, editar.
 
-* O projeto foi criando usando as tecnologias: *
+# O projeto foi criando usando as tecnologias: 
  brypt.js
  body-parser
  ejs
