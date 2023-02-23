@@ -1,3 +1,4 @@
+create database guiapress;
 
 CREATE TABLE IF NOT EXISTS `articles` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -11,7 +12,7 @@ CREATE TABLE IF NOT EXISTS `articles` (
   KEY `categoryId` (`categoryId`),
   CONSTRAINT `articles_ibfk_1` FOREIGN KEY (`categoryId`) REFERENCES `categories` (`id`) ON DELETE SET NULL ON UPDATE CASCADE
 ) ENGINE=InnoDB AUTO_INCREMENT=37 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
+use guiapress;
 
 
 
